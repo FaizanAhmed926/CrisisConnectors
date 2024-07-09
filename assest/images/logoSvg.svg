@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="150" viewBox="0 0 400 150">
+    <!-- Gradient Background -->
+    <defs>
+      <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(9, 39, 39)" />
+        <stop offset="100%" style="stop-color:transparent" />
+      </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bgGradient)" />
+  
+    <!-- Circle in White -->
+    <circle cx="200" cy="75" r="50" fill="#ffffff" />
+  
+    <!-- Text with Stylish Font (Cinzel Decorative) in Teal -->
+    <text x="50%" y="50%" font-family="Cinzel Decorative, cursive" font-size="36" fill="#03a985" text-anchor="middle" alignment-baseline="middle" font-weight="bold">CrisisConnectors</text>
+  </svg>

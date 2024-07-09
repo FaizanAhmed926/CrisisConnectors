@@ -1,0 +1,173 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Martel+Sans:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&family=Tilt+Prism&display=swap') margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+:root {
+    --a: 0;
+    --b: 55%;
+    --c: 55%;
+    --d: 55%;
+}
+
+body {
+    width: 100%;
+    background-color: #161616;
+    margin: 0px;
+    padding: 2%;
+
+}
+
+#main {
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* ........................................................scroll ..........................................................*/
+/* Apply styles to the entire page */
+body {
+    background-color: #1a1a1a;
+    /* Dark background color for the page */
+    color: #ffffff;
+    /* Light text color for better contrast */
+}
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    /* Dark color for the scrollbar thumb */
+}
+
+/* Custom scrollbar styles for Firefox */
+/* Note: Firefox currently does not support styling the scrollbar thumb directly */
+/* You can use the scrollbar-color property in future versions of Firefox */
+
+/* Custom scrollbar styles for Edge and IE */
+/* Note: Edge and IE use a different syntax for scrollbar styling */
+/* You can use the -ms-overflow-style property for older versions of IE */
+
+/* Example for Edge and IE */
+body {
+    scrollbar-face-color: #333333;
+    /* Dark color for the scrollbar face */
+    scrollbar-track-color: #1a1a1a;
+    /* Dark color for the scrollbar track */
+    scrollbar-arrow-color: #ffffff;
+    /* Light color for the scrollbar arrows */
+}
+
+/*....................................................... scrollend..........................................................   */
+
+/* .....................................................main starts......................................................... */
+.spotifyPlaylist {
+    padding: 15px;
+    max-height: 90vh;
+    overflow: auto;
+    border-radius: 2px;
+}
+
+.cardContainer {
+    display: flex;
+    /* gap: 5%; */
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 61vh;
+    display: flex;
+    gap: 0%;
+    align-items: center;
+    background-color: #161616;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: all 0.5s;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.card:hover {
+    background-color: #282828;
+    --a: 1;
+    --b: 50%;
+    --c: 50%;
+    --d: 59%;
+}
+
+.card .image {
+    width: 91%;
+    height: 65%;
+    object-fit: contain;
+    border-radius: 100px;
+}
+
+.card .cardContent {
+    width: 90%;
+    height: 30%;
+
+}
+
+
+.card div p {
+    font-size: 14px;
+}
+
+.play {
+    position: absolute;
+    top: var(--b);
+    left: 60%;
+    opacity: var(--a);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    /* border-radius: 50px; */
+    /* border:5px solid #fff; */
+}
+
+.play img {
+    width: 40px;
+    height: 40px;
+}
+.play button
+{
+    /* width: 80px; */
+    /* height: 40px; */
+    padding: 5px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+.play button a{
+    color: #314a53;
+    text-decoration: none;
+    font-weight:800;
+}
+
+.spotifyPlaylist h2 {
+    color: #314a53;
+    text-align: center;
+    font-size: 60px;
+    margin: 1%;
+}
+
+@media screen and (max-width: 850px) {
+    .spotifyPlaylist h2 {
+        color: #314a53;
+        text-align: center;
+        font-size: 47px;
+        margin: 1%;
+    }
+}

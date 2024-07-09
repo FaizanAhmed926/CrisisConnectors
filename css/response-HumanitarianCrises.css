@@ -1,0 +1,171 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Martel+Sans:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&family=Tilt+Prism&display=swap') margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(9, 39, 39);
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    width: 100%;
+    background-color: black;
+}
+#main h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin: auto;
+    width: 55%;
+    text-align: center;
+    line-height: 79%;
+    padding: 15px;
+    color: #338e93;
+}
+.divider {
+    width: 98.5vw;
+    height: 10px;
+    background-color: rgb(43, 36, 36);
+    margin: auto;
+}
+
+/* .........................................................page1 starts........................................ */
+#page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#page1 .page1-second {
+    width: 40%;
+    height: 54vh;
+    border-radius: 15% 0% 15% 0%;
+    overflow: hidden;
+}
+#page1 .page1-second img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+#page1 .page1-first {
+    width: 50%;
+    background-color: #000;
+    height: 70%;
+    border-radius: 0% 20% 20% 0;
+    text-align: start;
+    padding: 1% 1% 1% 1%;
+    overflow: hidden;
+}
+.page1-first h3 {
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 850px) {
+    #page1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page1 .page1-first {
+        width: 100%;
+        position: unset;
+        border-radius: 0% 0% 0% 0;
+        text-align: start;
+        padding: 1% 1% 1% 1%;
+    }
+
+    .page1-first h3 {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    #page1 .page1-second img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #page1 .page1-second {
+        width: 90%;
+        height: 40vh;
+        overflow: hidden;
+    }
+}
+
+/* ..................................................................page1 ends.......................................................... */
+
+
+/* ..................................................................page2 starts........................................................ */
+#page2 span{
+    color: #2b4e50;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+#page2 h3{
+    font-weight: 400;
+    margin: 0% 0% 2% 0%;
+}
+#page2
+{
+    padding: 0% 0% 0% 4%
+}
+/* ..................................................................page2 ends.......................................................... */
+
+/* ...................................................................page3 starts....................................................... */
+#page3 .page3-first
+{
+    display: flex;
+    justify-content: space-between;
+}
+#page3 .page3-first img
+{  width: 45%;
+    height: 54vh;
+    border-radius: 0% 15% 0% 36%;
+    object-fit: cover;
+}
+#page3 .page3-first div
+{
+    width: 50%;
+}
+#page3 .page3-first h3
+{
+    font-weight: 400;
+    margin: 0% 0% 2% 0%;
+}
+#page3 .page3-first span
+{
+    color: #2b4e50;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+#page3
+{
+    padding: 0% 2% 0% 4%
+}
+.page3-second span{
+    color: #2b4e50;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.page3-second h3{
+    font-weight: 400;
+    margin: 0% 0% 2% 0%;
+}

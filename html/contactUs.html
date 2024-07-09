@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactUs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contactUs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+        integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css"
+        integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <img src="/assest/images/logoSvg.svg" alt="" id="logo">
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./crisisUpdate.html">CRISIS UPDATES</a></li>
+                    <li><a href="../html/emergencyContact.html">EMERGENCY CONTACTS</a></li>
+                    <li><a href="../html/response.html">CRISIS RESPONSE</a></li>
+                    <li><a href="./evacuationRoutes.html">EVACUATION ROUTES</a></li>
+                    <li><a href="./contactUs.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <img style="height: 40px; width: 40px; filter: invert(1);"
+                src="/assest/images/hamburger-menu-svgrepo-com.svg" alt="">
+
+        </div>
+    </div>
+    <div id="hamburger-navbar">
+        <nav>
+            <h2>CrisisConnectors</h2>
+            <div class="close">
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../html/crisisUpdate.html">CRISIS UPDATES</a></li>
+                <li><a href="../html/emergencyContact.html">EMERGENCY CONTACTS</a></li>
+                <li><a href="../html/response.html">CRISIS RESPONSE</a></li>
+                <li><a href="./evacuationRoutes.html">EVACUATION ROUTES</a></li>
+                <li><a href="../html/contactUs.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="contact-content mt-3">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-5 img" data-aos="fade-right">
+                    <img src="../assest/images/contactUs.gif">
+                </div>
+                <div class="col-md-6 details" data-aos="fade-left">
+                    <h1 class="text-center">Contact Us</h1>
+                    <hr>
+                    <form class="m-5" action="" onsubmit="return false;">
+                        <div class="mb-3 mt-3">
+                            <label for="fname">First Name :</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                                name="fname">
+                            <p id="fname-alert" class="alert-text"></p>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="lname">Last Name :</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                name="lname">
+                            <p id="lname-alert" class="alert-text"></p>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label for="email">Email :</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <p id="email-alert" class="alert-text"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd">Comment :</label>
+                            <textarea class="form-control" rows="3" id="comment" name="comment"
+                                placeholder="Enter Your Comment Here"></textarea>
+                            <p id="comm-alert" class="alert-text"></p>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="submit-btn" onclick="formsubmit()"></input>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="js files/validate.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init(
+                {
+                    duration: 1000,
+                }
+            );
+        </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../javaScript/contactUs.js"></script>
+</body>
+</html>

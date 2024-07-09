@@ -1,0 +1,324 @@
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script&family=Martel+Sans:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,500&family=Tilt+Prism&display=swap') ;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(9, 39, 39);
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    width: 100%;
+    background-color: black;
+}
+
+
+.divider {
+    width: 98.5vw;
+    height: 10px;
+    background-color: rgb(43, 36, 36);
+    margin: auto;
+}
+
+/* ..................................................navbar starts............................................. */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding: 0% 3% 0% 6%;
+    background-color: #000;
+    z-index: 10;
+}
+
+#logo {
+    height: 80px;
+    width: 200px;
+    border-radius: 41%;
+}
+
+#navbar nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar {
+    width: 75%;
+    padding: 3px;
+}
+
+#navbar nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+#navbar nav ul li:hover {
+    transform: scale(1.2);
+}
+
+#navbar nav ul li a:hover {
+    color: rgb(16, 94, 111);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-navbar {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(4, 49, 37);
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: -600px;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+    scale: 0;
+    border-radius: 1%;
+
+}
+
+#hamburger-navbar nav {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -200vw;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#hamburger-navbar nav ul li {
+    margin: 50px 0;
+}
+
+#hamburger-navbar nav ul li a {
+    color: #fafafa;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#hamburger-navbar nav ul li a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    bottom: -10px;
+    left: 0;
+    transform-origin: left;
+    transition: transform .5s ease;
+    transform: scaleX(0);
+}
+
+
+#hamburger-navbar nav ul li a:hover:after {
+    transform: scaleX(1);
+}
+
+#hamburger-navbar nav .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#hamburger-navbar nav h2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    pointer-events: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+#hamburger-navbar nav .close div::before,
+#hamburger-navbar nav .close div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    transition: background .5s ease;
+}
+
+#hamburger-navbar nav .close div::before {
+    transform: rotate(-45deg);
+}
+
+#hamburger-navbar nav .close div::after {
+    transform: rotate(45deg);
+}
+
+#hamburger-navbar nav .close:hover div::before,
+#hamburger-navbar nav .close:hover div::after {
+    background: rgb(209, 3, 3);
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #hamburger-navbar {
+        display: flex;
+    }
+    #logo {
+        height: 70px;
+        width: 150px;
+        border-radius: 45%;
+    }
+}
+
+/* .................................................navbar ends................................ */
+
+
+/* .................................................page1 starts.............................. */
+#page1
+{
+    width: 100%;
+    height: 100vh;
+}
+iframe
+{
+    height: 100vh;
+    width: 100%;
+}
+
+/* .................................................page1 ends................................. */
+
+
+/* ..................................................page2 starts.............................. */
+#page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    height: 80%;
+    overflow: hidden;
+}
+
+#page2 .page2-first {
+    width: 50%;
+    background-color: #000;
+    height: 70%;
+    border-radius: 27% 0% 20% 0%;
+    text-align: start;
+    padding: 1% 1% 1% 1%;
+    overflow: hidden;
+}
+
+#page2 .page2-second img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page2 .page2-second {
+    width: 35%;
+    height: 54vh;
+    border-radius: 30% 0% 32% 0;
+    overflow: hidden;
+}
+
+.page2-first h1 {
+    font-size: 2.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 80%;
+}
+
+.page2-first h1 span {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #5d9eaf;
+}
+
+.page2-first h3 {
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 850px) {
+    #page2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page2 .page2-first {
+        width: 100%;
+        position: unset;
+        border-radius: 0% 0% 0% 0;
+        text-align: start;
+        padding: 1% 1% 1% 1%;
+    }
+
+    .page2-first h1 {
+        font-size: 2.1rem;
+        line-height: 90%;
+    }
+
+    .page2-first h1 span {
+        font-size: 2.3rem;
+    }
+
+    .page2-first h3 {
+        font-size: 1.2rem;
+    }
+
+    #page2 .page2-second img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #page2 .page2-second {
+        width: 90%;
+        height: 40vh;
+        border-radius: 0% 0% 30% 0;
+        overflow: hidden;
+    }
+}
+
+/* ..............................................................................page1 ends................................................... */

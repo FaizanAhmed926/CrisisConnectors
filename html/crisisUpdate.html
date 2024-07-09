@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrisisUpdate</title>
+    <link rel="stylesheet" href="../css/crisisUpdate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="/assest/images/logoSvg.svg" alt="" id="logo">
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="./crisisUpdate.html">CRISIS UPDATES</a></li>
+                        <li><a href="../html/emergencyContact.html">EMERGENCY CONTACTS</a></li>
+                        <li><a href="../html/response.html">CRISIS RESPONSE</a></li>
+                        <li><a href="./evacuationRoutes.html">EVACUATION ROUTES</a></li>
+                        <li><a href="../html/contactUs.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hamburger">
+                <img style="height: 40px; width: 40px; filter: invert(1);"
+                    src="/assest/images/hamburger-menu-svgrepo-com.svg" alt="">
+
+            </div>
+        </div>
+        <div id="hamburger-navbar">
+            <nav>
+                <h2>CrisisConnectors</h2>
+                <div class="close">
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./crisisUpdate.html">CRISIS UPDATES</a></li>
+                    <li><a href="../html/emergencyContact.html">EMERGENCY CONTACTS</a></li>
+                    <li><a href="../html/response.html">CRISIS RESPONSE</a></li>
+                    <li><a href="./evacuationRoutes.html">EVACUATION ROUTES</a></li>
+                    <li><a href="../html/contactUs.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="page1">
+            <div class="page1-first">
+                <h1>Welcome to <span>Crisis Central: </span>Real-Time Updates for Your Safety</h1>
+                <h3>Welcome to Crisis Central – your hub for real-time emergency updates. Stay informed with live
+                    alerts, official statements, and vital resources. Navigating crises is easier when you're armed with
+                    the latest, accurate information. Explore now for your safety and preparedness.</h3>
+            </div>
+            <div class="page1-second">
+                <img src="../assest/images/crisisUpdate-page1.avif" alt="">
+            </div>
+        </div>
+        <div class="divider">
+
+        </div>
+        <div id="page2">
+            <div> <i class="bi bi-cloud-drizzle-fill"></i><a href="https://mausam.imd.gov.in/responsive/rainfallinformation.php">RAINFALL INFORMATION</a></div>
+            <div><i class="bi bi-umbrella-fill"></i><a href="https://mausam.imd.gov.in/responsive/monsooninformation.php">MONSOON INFORMATION</a></div>
+            <div><img src="../assest/images/cyclone_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://mausam.imd.gov.in/responsive/cycloneinformation.php">CYCLONE INFORMATION</a></div>
+            <div><img src="../assest/images/Alert-Tsunami.png" alt=""><a href="https://tsunami.incois.gov.in/TEWS/">TSUNAMI</a></div>
+            <div><img src="../assest/images/alert-forestfire.png" alt=""><a href="http://117.239.115.41/smsalerts/">WILDFIRE</a></div>
+            <div> <img src="../assest/images/Alert-earthquake.png" alt=""><a href="https://riseq.seismo.gov.in/riseq/earthquake">EARTHQUAKE</a></div>
+            <div><a href="https://mausam.imd.gov.in/responsive/agromet_adv_ser_state_current.php">AGROMET ADVISORY SERVICES</a></div>
+            <div><img src="../assest/images/heat_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://mausam.imd.gov.in/responsive/climate_services.php">CLIMATE SERVICES</a></div>
+            <div><img src="../assest/images/location_city_FILL0_wght400_GRAD0_opsz24.svg" alt=""><a href="https://internal.imd.gov.in/pages/city_weather_main_mausam.php">URBAN METEOROLOGICAL SERVICES</a></div>
+            <div><a href="https://camd.imd.gov.in/">AVIATION SERVICES</a></div>
+            <div><a href="https://imdpune.gov.in/hazardatlas/index.html">CLIMATE HAZARD & VULNERABILITY ATLAS</a></div>
+            <div><a href="http://imdgeospatial.imd.gov.in/">GEOSPATIAL SERVICES</a></div>
+        </div>
+        <div class="divider">
+
+        </div>
+        <div id="page3">
+            <h1>Weather Updates</h1>
+            <div class="content">
+                <div class="content-first">
+                    <h2><span id="city_name"></span> weather</h2>
+                    <div class="search">
+                        <input id="city" type="text" placeholder="search city">
+                        <i id="submit" class="bi bi-search"></i>
+                    </div>
+                </div>
+                <div class="content-second">
+                    <div class="box">
+                        <h2>Temperature</h2>
+                        <div class="box-details">
+                            <h1 id="temp1">0 <span>°C</span></h1>
+                            <p>Temperature is: <span id="temp"></span></p>
+                            <p>Min Temperature is: <span id="min_temp"></span></p>
+                            <p>Max Temperature is: <span id="max_temp"></span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Humidity info</h2>
+                        <div class="box-details">
+                            <h1 id="humidity1">0 <SPan>%</SPan></h1>
+                            <p>Humidity is: <span id="humidity"></span></p>
+                            <p>sunrise time is: <span id="sunrise"></span></p>
+                            <p>Sunset time is: <span id="sunset"></span></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h2>Wind info</h2>
+                    <div class="box-details">
+                        <h1 id="wind_speed1"><SPan>km/hrs</SPan></h1>
+                        <p>Wind speed is: <span id="wind_speed"></span></p>
+                        <p>Wind degree is: <span id="wind_degrees"></span></p>
+                        <p>Feels Like: <span id="feels_like"></span></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+
+        </div>
+        <!-- <canvas class="ol-unselectable" width="1333" height="488" style="width: 100%; height: 100%;"></canvas> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../javaScript/crisisUpdate.js"></script>
+</body>
+
+</html>
